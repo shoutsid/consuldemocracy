@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Consul
   class Application < Rails::Application
+    config.active_record.yaml_column_permitted_classes = [ActiveSupport::HashWithIndifferentAccess]
     config.load_defaults 5.2
 
     # Keep belongs_to fields optional by default, because that's the way
