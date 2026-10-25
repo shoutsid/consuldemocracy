@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "5.2.6"
+gem "rails", "5.2.8.1"
 
 gem "acts-as-taggable-on", "~> 8.1.0"
 gem "acts_as_votable", "~> 0.13.1"
@@ -17,7 +17,7 @@ gem "cocoon", "~> 1.2.15"
 gem "daemons", "~> 1.4.0"
 gem "dalli", "~> 2.7.11"
 gem "delayed_job_active_record", "~> 4.1.6"
-gem "devise", "~> 4.8.0"
+gem "devise", "~> 4.0"
 gem "devise-security", "~> 0.16.0"
 gem "font-awesome-sass", "~> 5.15.1" # Remember to update vendor/assets/images/fontawesome when updating this gem
 gem "foundation-rails", "~> 6.6.2.0"
@@ -117,3 +117,4 @@ group :development do
 end
 
 eval_gemfile "./Gemfile_custom"
+gem "thor", "~> 1.2.0"
